@@ -14,8 +14,12 @@
 //#pragma option STM
 
 
+//=============================================================
+//=============================================================
 #include <windows.h>
 
+
+//=============================================================
 //the message is sent to all top-level window in the system
 #define HWND_BROADCAST	0xffff
 
@@ -38,19 +42,24 @@
 #define MONITOR_OFF	2
 #define MONITOR_ON	-1
 
+
+//=============================================================
 MSG strMSG;
 int Res;
 
-int main(){
+int main()
+{
 	Res = MessageBox(0, "Lock WorkStation & switch monitor to StandBy-mode?",
 	         "# Attention! #", MB_YESNOCANCEL | MB_DEFBUTTON2 );
 
 	Sleep(230);
 	WHILE( PeekMessage(#strMSG, NULL, 0, 0, PM_REMOVE) != 0 ) {};
+
 	SWITCH(Res)
 	{
 		CASE IDYES:
 			LockWorkStation();
+
 		CASE IDNO:
 //			SendMessage(HWND_TOPMOST, WM_SYSCOMMAND, SC_MONITORPOWER, MONITOR_OFF);
 			SendMessage( HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, MONITOR_OFF );
