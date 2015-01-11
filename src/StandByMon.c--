@@ -1,3 +1,11 @@
+/*
+	Copyright © 2007, 2008, 2013, 2014, 2015 Svyatoslav Skriplyonok. All rights reserved.
+	Licensed under the GNU AFFERO GENERAL PUBLIC LICENSE, Version 3
+	License: https://github.com/simvesel/StandByMon/blob/master/LICENSE
+*/
+
+
+//=============================================================
 #pragma option w32
 #pragma option X
 #include <windows.h>
