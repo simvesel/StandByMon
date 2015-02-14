@@ -1,5 +1,5 @@
 # StandByMon
-(C--/Cmm) Small utility to lock WorkStation &amp; switch monitor to StandBy-mode
+(C--/Cmm) Small utility to lock WorkStation &amp; switch monitor to Standby mode
 
 ### USING
 **SPHINX C-- Compiler   Version 0.239c b26   Apr 27 2007**
